@@ -43,8 +43,8 @@ void number_graphic(int number)
 	char c7[20] = "   \\ \\___/ /    ";
 	char c8[20] = "    \\_____/      ";
 
-	char d1[20] = "     __           ";
-	char d2[20] = "    | |  __       ";
+	char d1[20] = "     _            ";
+	char d2[20] = "    | |  _        ";
 	char d3[20] = "    | | | |       ";
 	char d4[20] = "    | |_| |_      ";
 	char d5[20] = "    |___  __|     ";
