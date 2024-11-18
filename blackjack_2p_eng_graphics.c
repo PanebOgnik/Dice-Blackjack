@@ -5,7 +5,7 @@
 #include <time.h>
 #include <unistd.h>
 
-void number_graphics(int number)
+void number_graphic(int number)
 {
 	char a1[20] = "     _____        ";
 	char a2[20] = "    / ___ \\      ";
@@ -52,14 +52,14 @@ void number_graphics(int number)
 	char d7[20] = "        | |       ";
 	char d8[20] = "        |_|       ";
 
-	char e1[20] = "      _______     ";
-	char e2[20] = "     | ______|    ";
-	char e3[20] = "     | |          ";
-	char e4[20] = "     | |_____     ";
-	char e5[20] = "     |_____  |    ";
-	char e6[20] = "           | |    ";
-	char e7[20] = "      _____| |    ";
-	char e8[20] = "     |_______|    ";
+	char e1[20] = "     _______      ";
+	char e2[20] = "    | ______|     ";
+	char e3[20] = "    | |           ";
+	char e4[20] = "    | |_____      ";
+	char e5[20] = "    |_____  |     ";
+	char e6[20] = "          | |     ";
+	char e7[20] = "     _____| |     ";
+	char e8[20] = "    |_______|     ";
 
 	char f1[20] = "      _______     ";
 	char f2[20] = "     / _____/     ";
@@ -97,7 +97,7 @@ void number_graphics(int number)
 	char i7[20] = "     _____| |     ";
 	char i8[20] = "    \\_______/    ";
 
-    if (number == 0)
+	if (number == 0)
 	{
 	printf("\n");
 	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",a1,a2,a3,a4,a5,a6,a7,a8);
@@ -149,12 +149,6 @@ void number_graphics(int number)
 	}
 	printf("\n");
 	return ;
-}
-
-// Function to roll a dice value between 1 and 6
-int dice() {
-    int roll = rand() % 6 + 1;
-    return roll;
 }
 
 // Function to ask for player names
