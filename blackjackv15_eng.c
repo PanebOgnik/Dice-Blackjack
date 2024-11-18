@@ -271,6 +271,11 @@ int dealer_round2(int *bank_value, int play_value, int *player_win, int *player_
     printf("\n%d %d", d1, d2);
     sleep(2);
 
+    if (*bank_value + d1 + d2 < 14) {
+        *bank_value = *bank_value + d1 + d2;
+        printf("\n\nDealer: \"The bank takes %d points and rolls again...\"", d1 + d2);
+        return *bank_value;
+    }
     if (*bank_value + d1 < 17 && *bank_value + d2 < 17 && *bank_value + d1 + d2 >= play_value) {
         *bank_value = *bank_value + d1 + d2;
         printf("\n\nDealer: \"The bank takes %d points...\"", d1 + d2);
