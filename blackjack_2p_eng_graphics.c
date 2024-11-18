@@ -5,138 +5,150 @@
 #include <time.h>
 #include <unistd.h>
 
-void number_graphic(int number) {
-    char a1[20] = "     _____        ";
-    char a2[20] = "    / ___ \\      ";
-    char a3[20] = "   / /   \\ \\    ";
-    char a4[20] = "   | |   | |      ";
-    char a5[20] = "   | |   | |      ";
-    char a6[20] = "   | |   | |      ";
-    char a7[20] = "   \\ \\___/ /    ";
-    char a8[20] = "    \\_____/      ";
+void number_graphics(int number)
+{
+	char a1[20] = "     _____        ";
+	char a2[20] = "    / ___ \\      ";
+	char a3[20] = "   / /   \\ \\    ";
+	char a4[20] = "   | |   | |      ";
+	char a5[20] = "   | |   | |      ";
+	char a6[20] = "   | |   | |      ";
+	char a7[20] = "   \\ \\___/ /    ";
+	char a8[20] = "    \\_____/      ";
 
-    char l1[20] = "      ___         ";
-    char l2[20] = "     /   |        ";
-    char l3[20] = "    / /| |        ";
-    char l4[20] = "   /_/ | |        ";
-    char l5[20] = "       | |        ";
-    char l6[20] = "       | |        ";
-    char l7[20] = "       | |        ";
-    char l8[20] = "       |_|        ";
+	char l1[20] = "      ___         ";
+	char l2[20] = "     /   |        ";
+	char l3[20] = "    / /| |        ";
+	char l4[20] = "   /_/ | |        ";
+	char l5[20] = "       | |        ";
+	char l6[20] = "       | |        ";
+	char l7[20] = "       | |        ";
+	char l8[20] = "       |_|        ";
 
-    char b1[20] = "     _____        ";
-    char b2[20] = "    / ___ \\      ";
-    char b3[20] = "   /_/   \\ \\    ";
-    char b4[20] = "         / /      ";
-    char b5[20] = "     ___/ /       ";
-    char b6[20] = "    / ___/        ";
-    char b7[20] = "   / /______      ";
-    char b8[20] = "   \\_______/     ";
+	char b1[20] = "     _____        ";
+	char b2[20] = "    / ___ \\      ";
+	char b3[20] = "   /_/   \\ \\    ";
+	char b4[20] = "         / /      ";
+	char b5[20] = "     ___/ /       ";
+	char b6[20] = "    / ___/        ";
+	char b7[20] = "   / /______      ";
+	char b8[20] = "   \\_______/     ";
 
-    char c1[20] = "     _____        ";
-    char c2[20] = "    / ___ \\      ";
-    char c3[20] = "   /_/   \\ \\    ";
-    char c4[20] = "       __| |      ";
-    char c5[20] = "      |__  |      ";
-    char c6[20] = "   __    | |      ";
-    char c7[20] = "   \\ \\___/ /    ";
-    char c8[20] = "    \\_____/      ";
+	char c1[20] = "     _____        ";
+	char c2[20] = "    / ___ \\      ";
+	char c3[20] = "   /_/   \\ \\    ";
+	char c4[20] = "       __| |      ";
+	char c5[20] = "      |__  |      ";
+	char c6[20] = "   __    | |      ";
+	char c7[20] = "   \\ \\___/ /    ";
+	char c8[20] = "    \\_____/      ";
 
-    char d1[20] = "       __         ";
-    char d2[20] = "      / / __      ";
-    char d3[20] = "     / / / /      ";
-    char d4[20] = "    / /_/ /_      ";
-    char d5[20] = "   /___  __/      ";
-    char d6[20] = "      / /         ";
-    char d7[20] = "     / /          ";
-    char d8[20] = "    /_/           ";
+	char d1[20] = "     __           ";
+	char d2[20] = "    | |  __       ";
+	char d3[20] = "    | | | |       ";
+	char d4[20] = "    | |_| |_      ";
+	char d5[20] = "    |___  __|     ";
+	char d6[20] = "        | |       ";
+	char d7[20] = "        | |       ";
+	char d8[20] = "        |_|       ";
 
-    char e1[20] = "         ______   ";
-    char e2[20] = "        / ____/   ";
-    char e3[20] = "       / /        ";
-    char e4[20] = "      / /____     ";
-    char e5[20] = "     /____  /     ";
-    char e6[20] = "         / /      ";
-    char e7[20] = "    ____/ /       ";
-    char e8[20] = "   /_____/        ";
+	char e1[20] = "      _______     ";
+	char e2[20] = "     | ______|    ";
+	char e3[20] = "     | |          ";
+	char e4[20] = "     | |_____     ";
+	char e5[20] = "     |_____  |    ";
+	char e6[20] = "           | |    ";
+	char e7[20] = "      _____| |    ";
+	char e8[20] = "     |_______|    ";
 
-    char f1[20] = "      _______     ";
-    char f2[20] = "     / _____/     ";
-    char f3[20] = "    / /           ";
-    char f4[20] = "    | |_____      ";
-    char f5[20] = "    |  ___  \\    ";
-    char f6[20] = "    | |   | |     ";
-    char f7[20] = "    | |___| |     ";
-    char f8[20] = "    \\_______/    ";
+	char f1[20] = "      _______     ";
+	char f2[20] = "     / _____/     ";
+	char f3[20] = "    / /           ";
+	char f4[20] = "    | |_____      ";
+	char f5[20] = "    |  ___  \\    ";
+	char f6[20] = "    | |   | |     ";
+	char f7[20] = "    | |___| |     ";
+	char f8[20] = "    \\_______/    ";
 
-    char g1[20] = "      _______     ";
-    char g2[20] = "     /_____  /    ";
-    char g3[20] = "          / /     ";
-    char g4[20] = "         / /      ";
-    char g5[20] = "        / /       ";
-    char g6[20] = "       / /        ";
-    char g7[20] = "      / /         ";
-    char g8[20] = "     /_/          ";
+	char g1[20] = "      _______     ";
+	char g2[20] = "     /_____  /    ";
+	char g3[20] = "          / /     ";
+	char g4[20] = "         / /      ";
+	char g5[20] = "        / /       ";
+	char g6[20] = "       / /        ";
+	char g7[20] = "      / /         ";
+	char g8[20] = "     /_/          ";
 
-    char h1[20] = "     _______      ";
-    char h2[20] = "    /   _   \\    ";
-    char h3[20] = "    |  | |  |     ";
-    char h4[20] = "    |_ |_| _|     ";
-    char h5[20] = "     _| _ |_      ";
-    char h6[20] = "    |  | |  |     ";
-    char h7[20] = "    |  |_|  |     ";
-    char h8[20] = "    \\_______/    ";
+	char h1[20] = "     _______      ";
+	char h2[20] = "    /   _   \\    ";
+	char h3[20] = "    |  | |  |     ";
+	char h4[20] = "    |_ |_| _|     ";
+	char h5[20] = "     _| _ |_      ";
+	char h6[20] = "    |  | |  |     ";
+	char h7[20] = "    |  |_|  |     ";
+	char h8[20] = "    \\_______/    ";
 
-    char i1[20] = "     _______      ";
-    char i2[20] = "    /   _   \\    ";
-    char i3[20] = "    |  | |  |     ";
-    char i4[20] = "    |  |_|  |     ";
-    char i5[20] = "    \\_____  |    ";
-    char i6[20] = "          \\ |    ";
-    char i7[20] = "     _____| |     ";
-    char i8[20] = "    \\_______/    ";
+	char i1[20] = "     _______      ";
+	char i2[20] = "    /   _   \\    ";
+	char i3[20] = "    |  | |  |     ";
+	char i4[20] = "    |  |_|  |     ";
+	char i5[20] = "    \\_____  |    ";
+	char i6[20] = "          \\ |    ";
+	char i7[20] = "     _____| |     ";
+	char i8[20] = "    \\_______/    ";
 
-    if (number == 0) {
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", a1, a2, a3, a4, a5, a6, a7, a8);
-        printf("\n");
-    }
-    if (number == 1) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", l1, l2, l3, l4, l5, l6, l7, l8);
-    }
-    if (number == 2) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", b1, b2, b3, b4, b5, b6, b7, b8);
-    }
-    if (number == 3) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", c1, c2, c3, c4, c5, c6, c7, c8);
-    }
-    if (number == 4) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d1, d2, d3, d4, d5, d6, d7, d8);
-    }
-    if (number == 5) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", e1, e2, e3, e4, e5, e6, e7, e8);
-    }
-    if (number == 6) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", f1, f2, f3, f4, f5, f6, f7, f8);
-    }
-    if (number == 7) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", g1, g2, g3, g4, g5, g6, g7, g8);
-    }
-    if (number == 8) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", h1, h2, h3, h4, h5, h6, h7, h8);
-    }
-    if (number == 9) {
-        printf("\n");
-        printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", i1, i2, i3, i4, i5, i6, i7, i8);
-    }
-    return;
+    if (number == 0)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",a1,a2,a3,a4,a5,a6,a7,a8);
+	}
+	if (number == 1)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",l1,l2,l3,l4,l5,l6,l7,l8);
+	}
+	if (number == 2)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",b1,b2,b3,b4,b5,b6,b7,b8);
+	}
+	if (number == 3)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",c1,c2,c3,c4,c5,c6,c7,c8);
+	}
+	if (number == 4)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",d1,d2,d3,d4,d5,d6,d7,d8);
+	}
+	if (number == 5)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",e1,e2,e3,e4,e5,e6,e7,e8);
+	}
+	if (number == 6)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",f1,f2,f3,f4,f5,f6,f7,f8);
+	}
+	if (number == 7)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",g1,g2,g3,g4,g5,g6,g7,g8);
+	}
+	if (number == 8)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",h1,h2,h3,h4,h5,h6,h7,h8);
+	}
+	if (number == 9)
+	{
+	printf("\n");
+	printf("\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",i1,i2,i3,i4,i5,i6,i7,i8);
+	}
+	printf("\n");
+	return ;
 }
 
 // Function to roll a dice value between 1 and 6
