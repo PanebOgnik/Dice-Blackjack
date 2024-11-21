@@ -642,8 +642,10 @@ int main() {
 
     if (player_stack == 0) {
         printf("\n\nDealer: \"Unfortunately, you lost everything. Better luck next time!\"");
+        sleep(3);
     } else {
         printf("\n\nDealer: \"Thanks for playing!\"");
+        sleep(3);
     }
     printf("\n\n\n");
     return 0;
