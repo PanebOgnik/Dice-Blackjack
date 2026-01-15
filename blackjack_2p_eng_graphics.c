@@ -163,6 +163,10 @@ void ask_names(char *player1_name, char *player2_name) {
     return;
 }
 
+int dice() {    
+    return (rand() % 6) + 1;
+}
+
 // Function to determine the order of players
 void determine_order(int *player1_dealer, int *player2_dealer, char player1_name[20], char player2_name[20]) {
     int w1 = 0;
@@ -565,3 +569,4 @@ int main() {
     printf("\n\n\n");
     return 0;
 }
+
